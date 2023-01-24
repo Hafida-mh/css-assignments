@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ** FONT MANNDALORE DECLARATION ** */
+@font-face {
+    font-family: "mandalore";
+    src: url("../fonts/mandalore/mandalore.ttf") format("truetype");
+  }
+
+body {
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(79,116,128,1) 88%, rgba(17,81,107,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-container {
+    border: 1px hidden black;
+    height: auto;
+    width: 100%;
+}
+
+.title {
+   font-size: 3em;
+   color: white;
+   font-family: mandalore;
+   letter-spacing: 2px;
+}
+
+/*  NAV SECTION */
+#navbar {
+    border: 1px hidden red;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.navbar-container {
+    border: 1px hidden blue;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 1px hidden orange;
+    height: 100%;
+    width: 190px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-items {
+  border: 1px hidden green;
+  height: 100%;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+/* **** FORM CONATAINER **** */
+.form-container {
+    border: 1px hidden red;
+    width: 100%;
+    height: 85vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-content {
+    border: 1px hidden white;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    border: 1px hidden orange;
+    height: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.name-inputs {
+    border: 1px hidden blue;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.outer-input {
+    border: 1px hidden green;
+    height: 50px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.first-name,
+.last-name 
+{
+    border: 1px hidden red;
+    height: 50px;
+    width: 390px;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.email-input,
+.subject-input,
+.msg-input
+{
+    border: 1px hidden pink;
+    height: auto;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.email-input .outer-input,
+.subject-input .outer-input,
+.msg-input .outer-input
+{
+    border: 1px hidden orange;
+    height: 50px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.email-input .outer-input .email,
+.subject-input .outer-input .subject,
+.msg-input .outer-input .msg 
+{
+    border: 1px hidden orange;
+    height: 50px;
+    width: 98%;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.msg-input .outer-input {
+    height: 300px;
+}
+
+.msg-input .outer-input .msg {
+    border: 1px hidden blue;
+    height: 98%;
+    font-size: 1.4em;
+}
+
+/* *** BUTTON CONTACT *** */
+.button-container {
+    border: 1px hidden orange;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-container button {
+    height: 50px;
+    width: 130px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 3px solid #F80080;
+    box-shadow: 6px -5px 100px -22px #F80080;
+    background-color: #F80080;
+    color: white;
+}
+
+.button-container button:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+    border: none;
+  } 
+
+/* **** FOOTER **** */
+footer {
+    border: 1px hidden black;
+    height: 60px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #59233C;
+  }
+  
+  .footer-content {
+    border: 1px hidden pink;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }

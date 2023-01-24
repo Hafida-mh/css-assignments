@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(79,116,128,1) 88%, rgba(17,81,107,1) 100%);
+}
+
+.container {
+    border: 1px hidden black;
+    height: 100vh;
+    width: 100%;
+}
+
+/*  NAV SECTION */
+#navbar {
+    border: 1px hidden red;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.navbar-container {
+    border: 1px hidden blue;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 1px hidden orange;
+    height: 100%;
+    width: 190px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-items {
+  border: 1px hidden green;
+  height: 100%;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ** ANIMATION  ** */
+@keyframes avatar-entry {
+    0% {  
+       margin-left: -800px;
+      
+       }
+    100% { 
+        margin-left: 0px;
+        display: inline;
+        }
+}
+
+/* *** AVATAR PRESENTATION *** */
+.avatar-presentation {
+    border: 1px hidden white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.img-section,
+.text-section 
+{
+    border: 1px hidden pink;
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-section div img {
+    object-fit: cover;
+    height: 600px;
+    width: 380px;
+    animation-name: avatar-entry;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    transition: all ease-in-out;
+}
+
+.text-section p {
+    line-height: 1.5;
+    font-size: 1.3em;
+    color: white;
+    padding: 18px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* **** FOOTER **** */
+footer {
+    border: 1px hidden black;
+    height: 60px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #59233C;
+  }
+  
+  .footer-content {
+    border: 1px hidden pink;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
