@@ -104,11 +104,16 @@ body {
     object-fit: cover;
     height: 600px;
     width: 380px;
+    margin-left: -800px;
     animation-name: avatar-entry;
     animation-duration: 2s;
     animation-delay: 1s;
     transition: all ease-in-out;
 }
+
+.img-section div img {
+    margin-left: 0px;
+} 
 
 .text-section p {
     line-height: 1.5;
